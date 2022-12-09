@@ -3,13 +3,15 @@ import { faFacebookMessenger } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { postsData } from "../Data/Data";
+import { AiOutlineHeart } from "react-icons/ai";
+import { TfiComments } from "react-icons/tfi";
+
 import "./postheader.css";
 import Header from "./Header";
 import { useEffect, useState } from "react";
 function Postheader() {
-    const [herat,setHeart] = useState("");
+  const [herat, setHeart] = useState("");
   return (
-    
     <>
       <Container>
         <Header />
@@ -33,9 +35,9 @@ function Postheader() {
             </div>
             <ul className="post-icon">
               <li>
-              <FontAwesomeIcon style={{fontSize:25}}  icon={faFacebookMessenger} />
+                <AiOutlineHeart style={{ fontSize: 35 }} />
               </li>
-              <FontAwesomeIcon style={{fontSize:25}}  icon={faFacebookMessenger} />
+              <TfiComments style={{ fontSize: 25 }} />
             </ul>
           </Container>
         ))}

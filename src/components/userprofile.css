@@ -37,7 +37,7 @@ object-fit: cover;
     justify-content: center;
     align-items: center;
 }
-.grid-wrapper > div img
+.grid-wrapper > div .post-image
 {
     max-width: 100%;
     height: auto;
@@ -45,7 +45,6 @@ object-fit: cover;
     display: inline-block;
     object-fit: cover;
 }
-
 .grid-wrapper
 {
     display: grid;
@@ -56,7 +55,7 @@ object-fit: cover;
     grid-auto-flow: dense;
 
 }
-.posts img
+.post-image
 {
     width: 100%;
     object-fit: cover;
